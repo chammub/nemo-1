@@ -1,0 +1,9 @@
+node_modules
+com.digiartitus.lib-1
+.idea/
+.mta/
+*.mtar
+dist/
+package-lock.json
+mta_archives/
+ui_deployer/resources/

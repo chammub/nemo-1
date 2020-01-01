@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <title><%=title%></title>
+</head>
+<body class="background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+
+            <!-- Login form start -->
+
+
+            <form class="form form-signin" action="/auth/login" method="post" >
+                <img class="mb-4" src="/docs/4.2/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <span><%=message%></span>
+                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <label for="inputUsername" class="sr-only">Email address</label>
+                <input type="text" id="inputUsername" name="username"  class="form-control" placeholder="Username" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
+                <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" name="remember" value="remember-me"> Remember me
+                </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-secondary btn-block" onclick="location.href='/auth/register'">Register</button>
+                <p class="mt-5 mb-3 text-muted">© 2019</p>
+            </form>
+
+            <!-- Login form end -->
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, Bootstrap JS, then local login.js -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>

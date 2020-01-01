@@ -1,0 +1,10 @@
+.form-signin input:first-of-type {
+    margin-bottom: -1px;
+  }
+  .form-signin input:last-of-type {
+    margin-bottom: 10px;
+  }
+  
+  .checkbox {
+      text-align: center;
+  }

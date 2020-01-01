@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+
+    <title><%=title%></title>
+</head>
+<body class="background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-3 col-xs-12"></div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+
+            <!-- Login form start -->
+
+            <form class="form form-register" action="/auth/register" method="post">
+                <img class="mb-4" src="/docs/4.2/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <span><%=message%></span>
+                <h1 class="h3 mb-3 font-weight-normal">Registration form</h1>
+                <label for="inputUsername" class="sr-only">Email address</label>
+                <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
+                <label for="inputPassword1" class="sr-only">Repeat Password</label>
+                <input type="password" id="inputPasswordRepeat" name="passwordRepeat" class="form-control" placeholder="Repeat Password" required="">
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required="">
+                <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="submit">Register</button>
+                <button class="btn btn-lg btn-block btn-secondary"  onclick="location.href = '/auth/login';">Back to Login</button>
+                <p class="mt-5 mb-3 text-muted">© 2019</p>
+            </form>
+
+            <!-- Login form end -->
+
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery first, Bootstrap JS, then local login.js -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

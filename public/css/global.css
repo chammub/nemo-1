@@ -1,0 +1,73 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.background {
+    background-color: #a6bed1;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+    border: 1px solid #3673ac;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0px 0px 23px -3px rgba(22,48,79,0.74);
+    -moz-box-shadow: 0px 0px 23px -3px rgba(22,48,79,0.74);
+    box-shadow: 0px 0px 23px -3px rgba(22,48,79,0.74);
+}
+
+.form .checkbox {
+    font-weight: 400;
+}
+.form .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.form .form-control:focus {
+    z-index: 2;
+    border-color: #3673ac;
+}
+
+.btn-primary:not(:disabled):not(.disabled) {
+    background-color: #3673ac;
+    border-color: #3673ac;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #6e88a0;
+    border-color: #3673ac;
+}
+
+.btn-secondary:not(:disabled):not(.disabled) {
+    background-color: #fff;
+    color: rgb(56, 65, 75);
+    border: 1px solid #3673ac;
+}
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: #6e88a0;
+}
+.btn-secondary:not(:disabled):not(.disabled).focus,
+.btn-secondary:not(:disabled):not(.disabled):focus {
+    border-color: #3673ac;
+}

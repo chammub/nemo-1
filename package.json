@@ -1,0 +1,52 @@
+{
+  "name": "invoice-app",
+  "version": "1.0.0",
+  "description": "Application for invoice expences",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "nodemon": "set DEBUG=app,app:* & nodemon ./app.js",
+    "lint": "./node_modules/.bin/eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "invoice-app"
+  ],
+  "author": "Shan",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "grunt": "^1.0.4",
+    "grunt-openui5": "^0.15.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^4.3.1",
+    "chalk": "^2.4.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "i": "^0.3.6",
+    "jquery": "^3.4.1",
+    "mongodb": "^3.1.13",
+    "morgan": "^1.9.1",
+    "npm": "^6.13.4",
+    "passport": "^0.1.17",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "simple-odata-server": "^1.1.1",
+    "simple-odata-server-mongodb": "^1.0.0"
+  }
+}
